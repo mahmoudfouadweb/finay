@@ -4,8 +4,9 @@ import SignUp from "./pages/SignUp";
 
 function App() {
   return (
-    <div>
+    <div className=" max-w-[1440px]">
       <SignUp />
+      
     </div>
   );
 }
