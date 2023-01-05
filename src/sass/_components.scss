@@ -149,7 +149,64 @@
     grid-column: center-start / center-end;
     display: flex;
     gap: 1vw;
+    
+    & input{
+      width: 6.4rem;
+      height: 6.4rem;
+      background-color: $color-Placeholder;
+      border: 1px solid $colorLine-Stroke-default;
+      border-radius: 8px;
+      stroke: none;outline: none;
+      
+      color: #fff;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      
+    }
   }
+  
+  &__continue{
+    grid-column: center-start / center-end;
+    
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 3rem;
+    align-items: center;
+    
+    font-size: 1.6rem;
+    font-weight: 500;
+    
+    &::before{
+      content: '';
+      display: block;
+      height: 1px;
+      background-color:$colorLine-Stroke-default ;
+      grid-column: 1 / span 1;
+    }
+    &::after{
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: $colorLine-Stroke-default;
+      grid-column: 3/ span 1;
+      // grid-row: 5 / span 1;
+    }
+  }
+  
+  
+  &__resend{
+    grid-column: center-start / center-end;
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+    
+    span{
+      color: $color-bg-primary;
+      cursor: pointer;
+    }
+  }
+  
   &__card--plan {
     max-width: 17.5rem;
     padding: 1vw;
