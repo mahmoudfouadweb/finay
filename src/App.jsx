@@ -4,9 +4,9 @@ import SignUp from "./pages/SignUp";
 
 function App() {
   return (
-    <div className="">
-      <SignUp />
+    <div className="container">
       
+      hi sass
     </div>
   );
 }

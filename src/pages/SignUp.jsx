@@ -8,11 +8,8 @@ import SignUpRight from "../components/SignUpRight";
 
 const SignUp = () => {
   return (
-    <div className="">
+    <div >
      
-      </div>
-      <SignUpRight />
-      {/* Right */}
 
 
     </div>
