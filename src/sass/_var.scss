@@ -1,9 +1,30 @@
 
+// COLOR VARIABLES
+
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+$color-grey-light: #D5D4D8;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary:"Urbanist", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
 // Primary
 $color-bg-primary-dark-6:  #33220F;
 $color-bg-primary-dark-5:  #855A2A;
-$color-bg-primary-dark-4:  #CC8534;
-$color-bg-primary-dark-3:  #FF8801;
+$color-bg-primary-dark: #CC8534;
+$color-bg-primary: #FF8200;
 $color-bg-primary-dark-2:  #FFE4C3;
 $color-bg-primary-dark-1:  #FFF4E7;
 
@@ -14,20 +35,20 @@ $color-bg-secondary-disabled:  #DBDBDB;
 
 // Black
 
-$color-black-8:   rgba(0, 0, 0, 0.8);
-$color-black-6: rgba(0, 0, 0, 0.6);
-$color-black-4: rgba(0, 0, 0, 0.4);
-$color-black-2:rgba(0, 0, 0, 0.2);
-$color-black-08: rgba(0, 0, 0, 0.08);
-$color-black-04:  rgba(0, 0, 0, 0.04);
+$color-black-8:   #000000cc;
+$color-black-6: #00000099;
+$color-black-4: #00000066;
+$color-black-2:#00000033;
+$color-black-08: #00000014;
+$color-black-04:  #0000000a;
 // White
 
-$color-white-8:  rgba(255, 255, 255, 0.8);
-$color-white-6:  rgba(255, 255, 255, 0.6);
-$color-white-4:  rgba(255, 255, 255, 0.4);
-$color-white-2:  rgba(255, 255, 255, 0.2);
-$color-white-08:  rgba(255, 255, 255, 0.08);
-$color-white-04:  rgba(255, 255, 255, 0.04);
+$color-white-8:  #ffffffcc;
+$color-white-6:  #ffffff99;
+$color-white-4:  #ffffff66;
+$color-white-2:  #ffffff33;
+$color-white-08:  #ffffff14;
+$color-white-04:  #ffffff0a;
 
 // Text
 
@@ -35,6 +56,8 @@ $color-Heading : #181A20;
 $color-Subtitle: #181A20;
 $color-Body : #181A20BD;
 $color-Placeholder : #181A208A;
+$color-text : #D5D4D8;
+
 $color-Disable : #181A204D;
 
 // color-STATES:
@@ -69,8 +92,8 @@ $color-Overlay :rgba(39,39,39,0.1);
 
 
  Heading
-  42px
-  35px
+  // 42px
+  // 35px
   29px
   24px
   20px

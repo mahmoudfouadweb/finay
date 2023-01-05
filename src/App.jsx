@@ -1,12 +1,11 @@
 import React from "react";
 import "./sass/main.scss";
-import SignUp from "./pages/SignUp";
+import SignUp from "./pages/sign/SignUp";
 
 function App() {
   return (
-    <div className="container">
-      
-      hi sass
+    <div className="container sign-in-up">
+      <SignUp />
     </div>
   );
 }
