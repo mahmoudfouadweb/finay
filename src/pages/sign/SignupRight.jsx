@@ -19,8 +19,8 @@ const SignupRight = () => {
       </div>
 
       {/* <FirstProgress /> */}
-      <SecondProgress />
-      {/* <ThirdProgress /> */}
+      {/* <SecondProgress /> */}
+      <ThirdProgress />
 
       {/* <button className=" right__btn btn-primary">
         <span>Next</span>

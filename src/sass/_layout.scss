@@ -1,20 +1,32 @@
-// .container {
-//     // max-width: 120rem;
-//     margin: 8rem auto;
-//     background-color: var(--color-grey-light-1);
-//     box-shadow: var(--shadow-dark);
-
-//     min-height: 50rem;
-
-//     @media only screen and (max-width: $bp-largest) {
-//         margin: 0;
-//         max-width: 100%;
-//         width: 100%;
-//     }
-// }
-
-// .header {
-
-// }
+.app{
+  max-width: 144rem;
+  margin: 0 auto;
+  min-height: 100vh;
+}
 
 
+.container {
+  max-width: 144rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: [left-start] 50vw [left-end right-start] 50vw [right-end];
+  
+}
+
+.congratulation{
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+  
+  display: grid;
+  grid-template-columns:[full-start] max-content [center-start ] repeat(8, 1fr) [center-end] 1fr [full-end];
+  justify-items: center;
+}
+
+.home{
+
+  display: grid;
+  grid-template-columns: [sidebar-start] minmax(25rem , 1fr) [sidebar-end center-start] repeat(12, 1fr) [center-end];
+  grid-template-rows: 7.2rem  1fr max-content;
+  min-height: 100vh;
+}

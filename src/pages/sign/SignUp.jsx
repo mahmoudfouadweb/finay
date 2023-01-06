@@ -5,9 +5,9 @@ import SignupRight from "./SignupRight";
 const SignUp = () => {
   return (
     <div className="container">
-       <SignupLeft />
+       {/* <SignupLeft />
       <SignupRight /> 
-      {/* <FinalProgress /> */}
+      <FinalProgress /> */}
     </div>
   );
 };

@@ -29,28 +29,7 @@ body {
   line-height: 1.6;
   background-color: #181A20;
   color:  $color-bg-secondary-light-1;
-}
-
-.container {
-  max-width: 144rem;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: [left-start] 50vw [left-end right-start] 50vw [right-end];
   
 }
 
-.congratulation{
-  grid-column: 1 / -1;
-  align-self: center;
-  justify-self: center;
-  
-  display: grid;
-  grid-template-columns:[full-start] max-content [center-start ] repeat(8, 1fr) [center-end] 1fr [full-end];
-  justify-items: center;
-}
 
-.home{
-  display: grid;
-  grid-template-columns: [sidebar-start] minmax(25rem , 1fr) [sidebar-end center-start] repeat(12, 1fr) [center-end];
-  min-height: 100vh;
-}
