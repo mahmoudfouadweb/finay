@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <aside className='sidebar'>
       <ul className="sidebar__container">
-        <li><a href="#" className="sidebar__link"><AiFillHome /> <span>home</span></a></li>
+        <li><a href="#" className="sidebar__link active"><AiFillHome /> <span>home</span></a></li>
         <li><a href="#" className="sidebar__link"><IoIosPeople /> <span>Community</span></a></li>
         <li><a href="#" className="sidebar__link"><MdExplore /> <span>Explore</span></a></li>
         <li><a href="#" className="sidebar__link"><MdStorefront /> <span>My Store</span></a></li>

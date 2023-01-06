@@ -5,7 +5,7 @@
 
   
   display: grid;
-  grid-template-columns: [full-start] minmax(21rem , 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end  ];
+  grid-template-columns: [full-start] minmax(25rem , 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end  ];
   grid-template-rows: 8rem;
   
   &__utility{
@@ -13,7 +13,7 @@
     &-box > *{align-self: center;}
     &-box{
       grid-column: full-start / center-start;
-      justify-self: center;
+      justify-self:center;
       display: flex;
       gap: 4rem;
     }
@@ -21,12 +21,14 @@
     &-icon{
       width: 2.4rem;
       height: 2.4rem;
+      transform: translateX(-80%);
     }
     
     &-logo{
       width: 1.6rem;
       height: 4.4rem;
       align-self: center;
+      transform: translateX(-70%);
     }
   }
   

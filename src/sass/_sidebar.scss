@@ -1,9 +1,8 @@
 .sidebar {
-  
   grid-column: 1 / span 1;
-  // grid-row: 2 /;
-  align-self: center;
-  justify-self: center;
+  grid-row: 2 / span 1;
+  padding-left: 25%;
+  padding-top: 2.4rem;
   background: linear-gradient(180deg, #151518 0%, rgba(45, 43, 56, 0) 100%);
 
   &__container {
@@ -14,8 +13,10 @@
     justify-content: center;
     row-gap: 2rem;
     
-    li{
-    
+    .line{
+      height: 1px;
+      background-color: $colorLine-Stroke-default;
+      width: 80%;
     }
   }
 
@@ -33,6 +34,10 @@
     & svg {
       width: 2.4rem;
       height: 2.4rem;
+    }
+    
+    &.active{
+      color: $color-bg-primary;
     }
   }
 }
