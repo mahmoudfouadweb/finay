@@ -2,7 +2,7 @@ import logo from "../../assets/images/Logo.png";
 import leftImg from "../../assets/images/left-img.png";
 import circle from "../../assets/images/circle.png";
 import arrowLeft from "../../assets/icons/arrow-left.png";
-
+ 
 const SignupLeft = () => {
   return (
     <div className="left">

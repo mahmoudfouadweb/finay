@@ -1,11 +1,13 @@
+import FinalProgress from "./FinalProgress";
 import SignupLeft from "./SignupLeft";
 import SignupRight from "./SignupRight";
 
 const SignUp = () => {
   return (
     <>
-      <SignupLeft />
-      <SignupRight />
+       <SignupLeft />
+      <SignupRight /> 
+      {/* <FinalProgress /> */}
     </>
   );
 };

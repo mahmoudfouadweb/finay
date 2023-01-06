@@ -11,9 +11,9 @@ const SignupRight = () => {
   return (
     <div className="right">
       <div className="right__progress--box">
-        <span className="active">1</span>
-        <div className="bar"></div>
-        <span className="right__progress--bar">2</span>
+        <span className=" done">1</span>
+        <div className="bar done"></div>
+        <span className="right__progress--bar active">2</span>
         <div className="bar"></div>
         <span>3</span>
       </div>
@@ -22,10 +22,10 @@ const SignupRight = () => {
       <SecondProgress />
       {/* <ThirdProgress /> */}
 
-      <button className=" right__btn btn-primary">
+      {/* <button className=" right__btn btn-primary">
         <span>Next</span>
         <img src={arrowRightBlack} alt="arrow next" />
-      </button>
+      </button> */}
       <p className="right__login--text">
         Already have an account? <span>Login</span>
         <img src={arrowRight} alt="arrow next" />

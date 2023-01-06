@@ -38,3 +38,13 @@ body {
   grid-template-columns: [left-start] 50vw [left-end right-start] 50vw [right-end];
   
 }
+
+.congratulation{
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+  
+  display: grid;
+  grid-template-columns:[full-start] max-content [center-start ] repeat(8, 1fr) [center-end] 1fr [full-end];
+  justify-items: center;
+}
