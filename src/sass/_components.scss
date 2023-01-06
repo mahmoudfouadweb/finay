@@ -176,8 +176,8 @@
       &::placeholder {
         color: $color-text;
       }
-      
-      &:last-of-type{
+
+      &:last-of-type {
         margin-bottom: 2rem;
       }
     }
@@ -243,31 +243,30 @@
       // grid-row: 5 / span 1;
     }
   }
-  
-  .icon-box{
+
+  .icon-box {
     grid-column: center-start / center-end;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    
-    .social-icon{
-    width: 4.4rem;
-    height: 4.4rem;
-    display: block;
-    padding: 1rem ;
-    background-color: $colorLine-Stroke-default;
-    border-radius: 8px;
-    cursor: pointer;
-    
-    &-apple{
-      
-    }
-    &-google{
+
+    .social-icon {
+      width: 4.4rem;
+      height: 4.4rem;
+      display: block;
+      padding: 1rem;
+      background-color: $colorLine-Stroke-default;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &-apple {
+      }
+      &-google {
+      }
     }
   }
-}
 
   &__resend {
     grid-column: center-start / center-end;
@@ -366,7 +365,7 @@
 .copywrite {
   grid-column: center-start / center-end;
   justify-self: center;
-  
+
   font-size: 1.2rem;
   font-weight: 400;
   color: $color-grey-light;
@@ -388,29 +387,129 @@
   }
 }
 
-
-.congratulation > *{grid-column: center-start / center-end;}
-.congratulation{
+.congratulation > * {
+  grid-column: center-start / center-end;
+}
+.congratulation {
   row-gap: 6rem;
-  
-  &__arrow{
+
+  &__arrow {
     grid-column: 1 / 2;
     transform: translateX(-20vw);
     // justify-self: ;
   }
-  
-  h2{font-size: 3.6rem;}
-  
-  &__text{
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #D5D4D8;
-    text-align: center;
-    line-height: 1.4;
-    
+
+  h2 {
+    font-size: 3.6rem;
   }
 
-  button{
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #d5d4d8;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  button {
     justify-self: center;
+  }
+}
+
+//////////////////////////////////////////////////////
+/// Home
+/// Home content
+
+.homeContent {
+  grid-column: center-start / center-end;
+
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    row-gap: 2rem;
+    align-content: center;
+    padding: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+    
+    background-image: url(../assets/images/main-background-dark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    h1 {
+      grid-column: 1 / span 3;
+      text-align: start;
+      line-height: 1.5;
+      
+      span {
+        color: $color-bg-primary;
+      }
+    }
+
+    &__text {
+      grid-column: 1 / span 2;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #ffffffcc;
+      text-align: start;
+    }
+    
+    button {
+      grid-column: 1 / span 2;
+      margin-top: 2rem;
+      max-width: 75%;
+    }
+    
+    &__image {
+      grid-column: 5 / -1;
+      grid-row: 1 / span 4;
+      justify-self: end;
+    }
+  }
+}
+//////////////////////////////////////////////////////
+/// Home
+/// Discover
+
+.discover {
+  background-color: #ffdcb7;
+  grid-column: 2 / -1;
+  padding: 2rem 4rem;
+  padding-bottom: 0;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+  
+  
+  display: grid;
+  grid-template-columns: min-content minmax(min-content , .6fr);
+  grid-template-rows: repeat(3, min-content);
+  justify-items: start;
+  column-gap: 2rem;
+  
+  h3 {
+    color: #000000;
+    grid-column: 2/ -1;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  &__img {
+    grid-column: 1 / span 1;
+  }
+
+  &__text {
+    color: #000000d9;
+    grid-column: 2/ -1;
+    font-size: 1.6rem;
+    text-align: start;
+    margin-bottom: 4rem;
+    transform: translateY(-50%);
+  }
+  
+  & button {
+    grid-column: 2/ -1;
+    color: #fff;
+    transform: translateY(-50%);
   }
 }
