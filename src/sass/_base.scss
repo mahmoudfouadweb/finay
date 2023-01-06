@@ -27,7 +27,7 @@ body {
   font-family: $font-primary;
   font-weight: 300;
   line-height: 1.6;
-  background-color: $color-bg-secondary-dark-1;
+  background-color: #181A20;
   color:  $color-bg-secondary-light-1;
 }
 
@@ -47,4 +47,10 @@ body {
   display: grid;
   grid-template-columns:[full-start] max-content [center-start ] repeat(8, 1fr) [center-end] 1fr [full-end];
   justify-items: center;
+}
+
+.home{
+  display: grid;
+  grid-template-columns: [sidebar-start] minmax(25rem , 1fr) [sidebar-end center-start] repeat(12, 1fr) [center-end];
+  min-height: 100vh;
 }

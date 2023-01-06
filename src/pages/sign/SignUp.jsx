@@ -4,11 +4,11 @@ import SignupRight from "./SignupRight";
 
 const SignUp = () => {
   return (
-    <>
+    <div className="container">
        <SignupLeft />
       <SignupRight /> 
       {/* <FinalProgress /> */}
-    </>
+    </div>
   );
 };
 

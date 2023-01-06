@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <div className="container sign-in-up">
+      <div className="main">
         <Home />
         {/* <SignUp /> */}
       </div>
