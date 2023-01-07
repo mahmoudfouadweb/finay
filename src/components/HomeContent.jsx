@@ -1,9 +1,12 @@
 import heroImg from "../assets/images/hero-images.png";
+import thumbnail1 from "../assets/images/thumbnail-1.png";
 import discoverImg from "../assets/icons/discover-Img.png";
+import cardIconRed from "../assets/icons/card-icon--red.png";
+import cardIcon from "../assets/icons/card-icon.svg";
 
 const HomeContent = () => {
   return (
-    <main className="homeContent">
+    <main className="home-content">
       <section className="hero">
         <h1 className="heading-1">
           All the best music NFT on <span>Finay</span>
@@ -15,7 +18,7 @@ const HomeContent = () => {
         <img src={heroImg} alt="" className="hero__image" />
       </section>
 
-      <div className="discover">
+      {/* <div className="discover">
         <img src={discoverImg} alt="" className="discover__img" />
         <h3 className="heading-3">
           Discover event, merch, songs at one place.
@@ -26,7 +29,43 @@ const HomeContent = () => {
           backstage pass.
         </p>
         <button className="btn btn-primary">Create</button>
+      </div> */}
+
+      <div className="home-content__title-box">
+        <h4 className="heading-4">What's hot</h4>
+        <p>See all</p>
       </div>
+      
+      <section className="whats-hot">
+        <figure className="card">
+          <img src={thumbnail1} alt="" className="card__thumbnail" />
+          <img src={cardIcon} alt="" className="card__icon" />
+          
+          <div className="card__content">
+          <img src={cardIconRed} alt="" className="card__red" />
+            <h6 className="card__name">Reo Cragun</h6>
+            <p className="card__type">gems</p>
+            <p className="card__title">Framework</p>
+            <p className="card__rate">2.25</p>
+            <button className="btn-card">Buy</button>
+          </div>
+        </figure>
+        
+        <figure className="card">
+          <img src={thumbnail1} alt="" className="card__thumbnail" />
+          <img src={cardIcon} alt="" className="card__icon" />
+          
+          <div className="card__content">
+          <img src={cardIconRed} alt="" className="card__red" />
+            <h6 className="card__name">Reo Cragun</h6>
+            <p className="card__type">gems</p>
+            <p className="card__title">Framework</p>
+            <p className="card__rate">2.25</p>
+            <button className="btn-card">Buy</button>
+          </div>
+        </figure>
+
+      </section>
     </main>
   );
 };

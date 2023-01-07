@@ -1,18 +1,21 @@
 .nav{
-  grid-column: sidebar-start / center-end;
+  grid-column: sidebar-start / full-end;
   background: linear-gradient(180deg, #171424 0%, rgba(26, 24, 38, 0) 100%);
   align-items: center;
 
   
   display: grid;
-  grid-template-columns: [full-start] minmax(25rem , 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end  ];
+  // grid-template-columns: [full-start] minmax(25rem , 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end];
+  
+  grid-template-columns: [sidebar-start full-start] minmax(25rem , 1fr) [sidebar-end center-start] repeat(10, 1fr) [center-end] minmax(20rem , 1fr) [full-end];
+  
   grid-template-rows: 8rem;
   
   &__utility{
     
     &-box > *{align-self: center;}
     &-box{
-      grid-column: full-start / center-start;
+      grid-column: full-start / span 1;
       justify-self:center;
       display: flex;
       gap: 4rem;
@@ -34,7 +37,7 @@
   
   &__search{
     &-box{
-      grid-column: center-start / col-end 5;
+      grid-column: center-start / span 4;
       height: 4.6rem;
       max-width: 46rem;
       
@@ -65,6 +68,7 @@
   
   &__profile{
     &-box{
+      // grid-column: ;
       justify-self: end;
       grid-column: 8 / center-end;
       font-size: 1.4rem;
