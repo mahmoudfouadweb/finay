@@ -25,7 +25,8 @@
 
 .home{
   display: grid;
-  grid-template-columns: [sidebar-start full-start] minmax(25rem , 1fr) [sidebar-end center-start] repeat(10, 1fr) [center-end] minmax(20rem , 1fr) [full-end];
+  grid-template-columns: [sidebar-start full-start] minmax(24rem , 25rem) [sidebar-end center-start] repeat(10, 1fr) [center-end] minmax(20rem , 1fr) [full-end];
   grid-template-rows: 7.2rem  1fr max-content;
-  // min-height: 100vh;
+  overflow-x: hidden;
+  row-gap: 0.5rem;
 }

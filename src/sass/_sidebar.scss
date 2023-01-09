@@ -1,9 +1,13 @@
 .sidebar {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  padding-left: 25%;
   padding-top: 2.4rem;
   background: linear-gradient(180deg, #151518 0%, rgba(45, 43, 56, 0) 100%);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 
   &__container {
     list-style: none;
