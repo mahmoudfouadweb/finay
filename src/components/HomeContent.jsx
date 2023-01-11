@@ -4,6 +4,7 @@ import heroBackground from "../assets/images/main-background-dark.png";
 import discoverImg from "../assets/icons/discover-Img.png";
 import qrcode from "../assets/images/download-qrcode.png";
 import phone from "../assets/images/download-phone.png";
+import artist1 from "../assets/images/artist-img-1.png";
 import apple from "../assets/icons/apple-icon.png";
 import google from "../assets/icons/google-play-icon.png";
 import WhatsNew from "./WhatsNew";
@@ -66,8 +67,8 @@ const HomeContent = () => {
           </a>
         </div>
 
-        <img src={phone} alt="" className="download__phone" />
-        <img src={qrcode} alt="" className="download__qrcode" />
+        <img src={phone} alt="download" className="download__phone" />
+        <img src={qrcode} alt="download" className="download__qrcode" />
       </section>
 
       <div className="home-content__title-box">
@@ -75,6 +76,30 @@ const HomeContent = () => {
         <p>See all</p>
       </div>
       <WhatsNew />
+      <div className="home-content__title-box">
+        <h4 className="heading-4">Top artist</h4>
+      </div>
+      
+      <div className="top-artist">
+        <div className="round-card">
+          <div className="round"></div>
+        <img src={artist1} alt="" className="top_artist__img" />
+        <span>Tylor Swift</span>
+       </div>
+        <div className="round-card">
+        <img src={artist1} alt="" className="top_artist__img" />
+        <span>Tylor Swift</span>
+       </div>
+        <div className="round-card">
+        <img src={artist1} alt="" className="top_artist__img" />
+        <span>Tylor Swift</span>
+       </div>
+        <div className="round-card">
+        <img src={artist1} alt="" className="top_artist__img" />
+        <span>Tylor Swift</span>
+       </div>
+        </div>
+        
     </main>
   );
 };
