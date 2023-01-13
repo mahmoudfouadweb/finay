@@ -7,7 +7,7 @@
   display: grid;
   // grid-template-columns: [full-start] minmax(25rem , 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end];
   
-  grid-template-columns: [sidebar-start full-start] minmax(25rem , 1fr) [sidebar-end center-start] repeat(10, 1fr) [center-end] minmax(20rem , 1fr) [full-end];
+  grid-template-columns: [sidebar-start full-start] minmax(10vw , 1fr)  [sidebar-end center-start] repeat(10, 1fr) [center-end] minmax(20rem , 1fr) [full-end];
   
   grid-template-rows: 8rem;
   

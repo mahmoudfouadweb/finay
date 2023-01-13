@@ -79,27 +79,46 @@ const HomeContent = () => {
       <div className="home-content__title-box">
         <h4 className="heading-4">Top artist</h4>
       </div>
-      
+
       <div className="top-artist">
-        <div className="round-card">
-          <div className="round"></div>
-        <img src={artist1} alt="" className="top_artist__img" />
-        <span>Tylor Swift</span>
-       </div>
-        <div className="round-card">
-        <img src={artist1} alt="" className="top_artist__img" />
-        <span>Tylor Swift</span>
-       </div>
-        <div className="round-card">
-        <img src={artist1} alt="" className="top_artist__img" />
-        <span>Tylor Swift</span>
-       </div>
-        <div className="round-card">
-        <img src={artist1} alt="" className="top_artist__img" />
-        <span>Tylor Swift</span>
-       </div>
+        <div className="artist-card">
+          <img src={artist1} alt="artist" className="top_artist__img" />
+          <span>Tylor Swift</span>
         </div>
-        
+        <div className="artist-card">
+          <img src={artist1} alt="artist" className="top_artist__img" />
+          <span>Tylor Swift</span>
+        </div>
+        <div className="artist-card">
+          <img src={artist1} alt="artist" className="top_artist__img" />
+          <span>Tylor Swift</span>
+        </div>
+        <div className="artist-card">
+          <img src={artist1} alt="artist" className="top_artist__img" />
+          <span>Tylor Swift</span>
+        </div>
+        <div className="artist-card">
+          <img src={artist1} alt="artist" className="top_artist__img" />
+          <span>Tylor Swift</span>
+        </div>
+        <div className="artist-card">
+          <img src={artist1} alt="artist" className="top_artist__img" />
+          <span>Tylor Swift</span>
+        </div>
+        <div className="artist-card">
+          <img src={artist1} alt="artist" className="top_artist__img" />
+          <span>Tylor Swift</span>
+        </div>
+        <div className="artist-card">
+          <img src={artist1} alt="artist" className="top_artist__img" />
+          <span>Tylor Swift</span>
+        </div>
+      </div>
+      
+      <div className="home-content__title-box">
+        <h4 className="heading-4">Upcoming events</h4>
+        <p>See all</p>
+      </div>
     </main>
   );
 };
