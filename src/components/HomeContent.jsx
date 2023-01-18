@@ -114,11 +114,34 @@ const HomeContent = () => {
           <span>Tylor Swift</span>
         </div>
       </div>
-      
+
       <div className="home-content__title-box">
         <h4 className="heading-4">Upcoming events</h4>
         <p>See all</p>
       </div>
+
+      <section className="upcoming-events">
+        <div className="upcoming-events__card">
+          <img src="" alt="" className="upcoming-events__card-img" />
+          <h5 className="upcoming-events__card-title">Reo Cargun</h5>
+          <p className="upcoming-events__card-content">framworks</p>
+          <button type="button">tommorow</button>
+        </div>
+        <div className="upcoming-events__card">
+          <img src="" alt="" className="upcoming-events__card-img" />
+          <h5 className="upcoming-events__card-title">Reo Cargun</h5>
+          <p className="upcoming-events__card-content">framworks</p>
+          <button type="button">tommorow</button>
+        </div>
+        <div className="upcoming-events__card">
+          <img src="" alt="" className="upcoming-events__card-img" />
+          <div className="upcoming-events-fading">
+            <h5 className="upcoming-events__card-title">Reo Cargun</h5>
+            <p className="upcoming-events__card-content">framworks</p>
+            <button type="button">tommorow</button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
